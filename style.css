@@ -7,6 +7,8 @@
 .container{
     max-width: 1300px;
     margin: 0 auto;
+    position: relative;
+    overflow-x:hidden ;
 }
 ul {
     list-style: none;
@@ -379,6 +381,7 @@ nav {
     background-color:#6e3cf7;
     color: white;
     transition: .5s ease;
+    z-index: 100;
 }
 .togside a{
     text-decoration: none;
