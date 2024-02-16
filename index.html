@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="np1">
+                <h2>COMPANY</h2>
+                <i class='bx bx-menu'></i>
+                <a style="color: grey;" href="">HOME</a> <span>|</span>
+                <a href="#">MESSAGES</a>
+            </div>
+            <div class="np2">
+                <div>
+                    <input type="text" placeholder="Search Something...">
+                    <i class='bx bx-search-alt-2'></i>
+                </div>
+                <i style="font-size: 23px;" class='bx bxs-bell'></i>
+                <a href="#">Notifications</a>
+                <a href="#">Welcome, Admin</a><i style="font-size: smaller;" class='bx bxs-down-arrow'></i>
+            </div>
+        </nav>
+        <div class="nav">
+            <h2>COMPANY</h2>
+            <i class='bx bx-menu' onclick="toggle();"></i>
+
+            <div class="togside">
+             <ul>
+                <li><h1>Company</h1></li>
+                <li>  <div>
+                    <input type="text" placeholder="Search Something...">
+                </div></li>
+                <li>Notifications</li>
+                <li><a href="#">Welcome, Admin</a><i style="font-size: smaller;" class='bx bxs-down-arrow'></i></li>
+             </ul>
+            </div>
+        </div>
+        <!-- =================NAV END================= -->
+
+        <div class="content">
+
+            <!-- ==================SIDE====================== -->
+            <div class="side">
+                <i class='bx bxs-dashboard'></i>
+                <i style="background-color: #eeeff1;width: 100%;text-align: center;" class='bx bxs-inbox'></i>
+                <i class='bx bxs-cog'></i>
+                <i class='bx bxs-user-circle'></i>
+                <i class='bx bx-log-in logout'></i>
+            </div>
+            <!-- ==================SIDE ENDED====================== -->
+            <div class="all-messages">
+
+                <a href="#" onclick=handleclick();>All Messages</a>
+                <a href="#">Completed</a>
+                <a href="#">Saved</a>
+                <a href="#">Deleted</a>
+
+            </div>
+            <div class="show"></div>
+            <div class="messages">
+                <h3>Messages</h3>
+                <ul>
+                    <li>All Chats <i class='bx bx-chevron-down'></i>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Linkedin</li>
+                            <li>Yelp</li>
+                            <li>Twitter</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="card" data-title="Jennifer"
+                    data-img="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div>
+                        <p>Jennifer</p>
+                        <p>Write Question regarding...</p>
+                        <div class="dots">...</div>
+                    </div>
+                </div>
+                <div class="card" data-title="Albert Dera"
+                    data-img="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div>
+                        <p>Albert Dera</p>
+                        <p>How can i avail your product?</p>
+                        <div class="dots">...</div>
+                    </div>
+                </div>
+                <div class="card"
+                    data-img="https://images.unsplash.com/photo-1584043720379-b56cd9199c94?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    data-title="Tery">
+                    <img src="https://images.unsplash.com/photo-1584043720379-b56cd9199c94?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div>
+                        <p>Terry</p>
+                        <p>We'll like to do business.</p>
+                        <div class="dots">...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-his">
+                <div class="card">
+                    <img class="img" src="" alt="">
+                    <div>
+                        <p style="font-size: 20px;font: bold;" class="p">${title}</p>
+                        <p style="color: grey;">Online</p>
+                        <div class="dots">...</div>
+                    </div>
+                </div>
+
+                <div class="girlchat">
+                    <ul class="gchat">
+                        <li><img class="gimg"
+                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                            <p>Hello..</p>
+                        </li>
+                        <li><img class="gimg"
+                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                            <p>How are you?</p>
+                        </li>
+                        <li><img class="gimg"
+                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                            <p>Waiting for response. </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="input">
+                    <div>
+                        <input class="inputf" type="text" placeholder="type here...">
+                        <i class='bx bxs-plus-circle plus'></i>
+                        <i class='bx bxs-send send' onclick=send()></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
